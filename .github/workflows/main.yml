@@ -3,7 +3,7 @@ name: auto_signss
 on:
   schedule:
     # UTC 时间 0 点运行一次
-    - cron: '0 0 10,21 * * * '
+    - cron: '0 10,21 * * *'
   workflow_dispatch:
 
 jobs:
