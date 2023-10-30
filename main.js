@@ -30,8 +30,8 @@ async function handlePush(desp) {
 async function ikuunSign() {
   try {
     const loginParams = qs.stringify({
-      email: '1779318132@qq.com',
-      passwd: '1779318132',
+      email: USERNAME,
+      passwd: PASSWORD,
       code: "",
     });
 
