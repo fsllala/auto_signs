@@ -2,7 +2,7 @@ name: Growth
 
 on:
   schedule:
-    # UTC 时间 0 点运行一次
+    # UTC 时间 2 点运行一次(北京时间10点多)
     - cron: '0 2 * * *'
   workflow_dispatch:
 
