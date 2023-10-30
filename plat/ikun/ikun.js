@@ -1,5 +1,22 @@
 const ikuunInstance = require("./ikunReq");
 
+const ikuunLogin = (data) => {
+  return ikuunInstance({
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
+    },
+    method: "POST",
+    url: "/auth/login",
+    data,
+  });
+};
+const ikuunLoginUser = () => {
+  return ikuunInstance({
+    method: "GET",
+    url: "/user",
+  });
+};
+
 const ikuunSignReq = () => {
   return ikuunInstance({
     method: "POST",
@@ -7,6 +24,8 @@ const ikuunSignReq = () => {
   });
 };
 
-module.exports={
-  ikuunSignReq
-}
+module.exports = {
+  ikuunLogin,
+  ikuunLoginUser,
+  ikuunSignReq,
+};
