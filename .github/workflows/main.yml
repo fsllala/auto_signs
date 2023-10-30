@@ -19,7 +19,8 @@ jobs:
       - name: Depend install and serve
         env:
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
-          iKUN_COOKIE: ${{ secrets.iKUN_COOKIE }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+          PASS_WORD: ${{ secrets.PASS_WORD }}
         run: |
           npm install
           npm run serve
